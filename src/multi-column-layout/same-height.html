@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>等高布局</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/meyer-reset/2.0/reset.min.css">
+  <style>
+    /* 所有列等高布局 */
+    .parent {
+      overflow: hidden;
+    }
+
+    .left,.right {
+      padding-bottom: 9999px;
+      margin-bottom: -9999px;
+    }
+
+    .left {
+      background-color: #ccc;
+      float: left;
+      margin-right: 20px;
+      width: 100px;
+    }
+
+    .right {
+      background-color: #999;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="left">
+          <p>left</p>
+        </div>
+        <div class="right">
+          <p>right1</p>
+          <p>right2</p>
+        </div>
+      </div>
+</body>
+</html>
