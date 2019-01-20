@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>水平居中布局3</title>
+  <style>
+    /* position: absolute + transform */
+    .parent {
+      position: relative;
+    }
+
+    .child {
+      background-color: #ccc;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="child">水平居中布局</div>
+  </div>
+</body>
+
+</html>
