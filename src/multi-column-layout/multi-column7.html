@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>多列布局5</title>
+  <style>
+    /* flex + margin */
+    .left,
+    .right {
+      background-color: #ccc;
+    }
+
+    .parent {
+      display: flex;
+    }
+
+    .left {
+      margin-right: 20px;
+    }
+
+    .right {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="left">
+      <p>left</p>
+    </div>
+    <div class="right">
+      <p>right1</p>
+      <p>right2</p>
+    </div>
+  </div>
+</body>
+
+</html>
