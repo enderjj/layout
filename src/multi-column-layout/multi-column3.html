@@ -18,6 +18,8 @@
 
     .right {
       background-color: #999;
+      /* 容器设置 overflow: hidden 后，会触发 BFC(块级格式化文本) 模式 */
+      /* 具有 BFC 模式的容器，其内容不受其他元素影响，此例中，环绕的文本会变成不环绕 */
       overflow: hidden;
     }
   </style>
